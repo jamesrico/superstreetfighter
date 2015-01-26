@@ -1,14 +1,11 @@
-/* global describe, it */
-/* jshint expr: true */
+var assert = require("assert")
+describe('Array', function(){
+  describe('#indexOf()', function(){
+    it('should return -1 when the value is not present', function(){
+      assert.equal(-1, [1,2,3].indexOf(5));
+      assert.equal(-1, [1,2,3].indexOf(0));
+    })
+  })
+})
 
-'use strict';
-
-var expect      = require('chai').expect,
-    Constructor = require(process.cwd() + '/lib/Constructor');
-
-describe('Mocha', function () {
-  it('should expect true and false', function () {
-    expect(true).to.be.true;
-    expect(false).to.be.false;
-  });
-});
+$  mocha

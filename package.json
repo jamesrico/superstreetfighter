@@ -8,7 +8,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "./node_modules/moha/bin/mocha",
     "lint": "npm run lint-json && npm run lint-js && npm run lint-js-style",
     "lint-json": "jsonlint -q package.json .jscsrc .jshintrc",
     "lint-js": "jshint .",
@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/sscotth/super-street-fighter/issues"
   },
-  "homepage": "https://github.com/sscotth/super-street-fighter"
+  "homepage": "https://github.com/sscotth/super-street-fighter",
+  "directories": {
+    "test": "test"
+  }
 }
